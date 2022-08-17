@@ -10,7 +10,7 @@ Pre-requisites:
 
 How can I use it ?:
 
-* run `./start.sh` on the main directory : it's will start grafana docker and install gatling plugin
+* run `./start.sh` on the main directory : it's will install gatling plugin on a grafana container
 * Grafana server will be run on http://localhost:3000/
 * set-up [Gatling Datasource](https://gatling.io/docs/enterprise/cloud/reference/plugins/grafana/#adding-the-datasource)
 * sample dashboard example in : `gatling-plugin/frontline-grafana/dashboardSamples`
