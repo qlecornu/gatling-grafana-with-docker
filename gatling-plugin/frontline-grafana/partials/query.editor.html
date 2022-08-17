@@ -1,0 +1,67 @@
+<query-editor-row query-ctrl="ctrl" can-collapse="true" has-text-edit-mode="true">
+
+  <div class="gf-form-inline">
+    <div class="gf-form">
+      <label class="gf-form-label query-keyword width-7">METRIC</label>
+      <metric-segment segment="ctrl.metricSegment"
+                      get-options="ctrl.getMetrics()"
+                      on-change="ctrl.metricChanged()">
+      </metric-segment>
+    </div>
+    <div class="gf-form gf-form--grow">
+      <div class="gf-form-label gf-form-label--grow"></div>
+    </div>
+  </div>
+
+    <div class="gf-form-inline">
+      <div class="gf-form">
+        <label class="gf-form-label query-keyword width-7">PARAMS</label>
+        <metric-segment segment="ctrl.simulationSegment"
+                        get-options="ctrl.getSimulations()"
+                        on-change="ctrl.simulationChanged()">
+        </metric-segment>
+        <metric-segment segment="ctrl.runSegment"
+                        get-options="ctrl.getRuns()"
+                        on-change="ctrl.runChanged()">
+        </metric-segment>
+        <metric-segment segment="ctrl.scenarioSegment"
+                        get-options="ctrl.getScenarios()"
+                        on-change="ctrl.scenarioChanged()"
+                        data-ng-if="ctrl.isRequire('scenario')">
+        </metric-segment>
+        <metric-segment segment="ctrl.groupSegment"
+                        get-options="ctrl.getGroups()"
+                        on-change="ctrl.groupChanged()"
+                        data-ng-if="ctrl.isRequire('group')">
+        </metric-segment>
+        <metric-segment segment="ctrl.requestSegment"
+                        get-options="ctrl.getRequests()"
+                        on-change="ctrl.requestChanged()"
+                        data-ng-if="ctrl.isRequire('request')">
+        </metric-segment>
+        <metric-segment segment="ctrl.remoteSegment"
+                        get-options="ctrl.getRemotes()"
+                        on-change="ctrl.remoteChanged()"
+                        data-ng-if="ctrl.isRequire('remote')">
+        </metric-segment>
+        <metric-segment segment="ctrl.hostnameSegment"
+                        get-options="ctrl.getHostnames()"
+                        on-change="ctrl.hostnameChanged()"
+                        data-ng-if="ctrl.isRequire('hostname')">
+        </metric-segment>
+        <metric-segment segment="ctrl.injectorSegment"
+                        get-options="ctrl.getInjectors()"
+                        on-change="ctrl.injectorChanged()"
+                        data-ng-if="ctrl.isRequire('injector')">
+        </metric-segment>
+        <metric-segment segment="ctrl.scopeSegment"
+                        get-options="ctrl.getScopes()"
+                        on-change="ctrl.scopeChanged()"
+                        data-ng-if="ctrl.isRequire('scope')">
+        </metric-segment>
+      </div>
+      <div class="gf-form gf-form--grow">
+        <div class="gf-form-label gf-form-label--grow"></div>
+      </div>
+    </div>
+</query-editor-row>

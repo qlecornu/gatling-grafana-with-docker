@@ -1,0 +1,15 @@
+services:
+  grafana:
+    image: grafana/grafana-oss:main
+    container_name: grafana
+    volumes:
+      - plugins:/var/lib/grafana/plugins
+      - logs:/var/log/grafana
+      - grafana-volume:/etc/grafana/
+    restart: always
+    ports: 
+      - 3000:3000
+volumes:
+  plugins:
+  logs:
+  grafana-volume:

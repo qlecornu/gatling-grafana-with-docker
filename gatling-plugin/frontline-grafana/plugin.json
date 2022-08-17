@@ -1,0 +1,25 @@
+{
+  "name": "Gatling Enterprise",
+  "type": "datasource",
+  "id": "frontline",
+  "defaultMatchFormat": "glob",
+  "metrics": true,
+  "annotations": false,
+  "staticRoot": ".",
+  "info": {
+    "description": "Gatling Enterprise Datasource",
+    "author": {
+      "name": "Gatling Corp",
+      "url": "https://gatling.io"
+    },
+    "version": "1.16.4",
+    "logos": {
+      "small": "images/logo.png",
+      "large": "images/logo.png"
+    },
+    "updated": "2022-05-02"
+  },
+  "dependencies": {
+    "grafanaVersion": "3.x.x"
+  }
+}
